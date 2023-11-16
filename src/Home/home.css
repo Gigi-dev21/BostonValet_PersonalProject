@@ -1,0 +1,30 @@
+.home {
+  background-image: url("../Resources/Images/bannerImage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  text-align: center;
+}
+.logoImage {
+  width: 250px;
+}
+.adminbutton {
+  margin-right: 20px;
+}
+
+.logo button {
+  padding: 5px;
+  border: none;
+  color: blue;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}

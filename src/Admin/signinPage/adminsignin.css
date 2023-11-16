@@ -1,0 +1,12 @@
+.login_container {
+  background-color: rgb(215, 193, 149);
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 250px;
+}
+.adminSignIn {
+  padding: 10px;
+  max-width: 550px !important;
+  margin: 0 auto;
+}
