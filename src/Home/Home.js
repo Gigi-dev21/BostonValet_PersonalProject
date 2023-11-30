@@ -11,7 +11,7 @@ function Home() {
           <img className="logoImage" src={logo} alt="" />
           <h1></h1>
           <button
-            className="adminbutton"
+            className="adminbutton button"
             onClick={() => {
               navigate("/adminsignin");
             }}

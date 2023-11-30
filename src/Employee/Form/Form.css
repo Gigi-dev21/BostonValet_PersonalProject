@@ -15,3 +15,16 @@
   font-size: 20px;
   border-color: rgb(172, 172, 172);
 }
+.capitalize-first-letter {
+  text-transform: capitalize;
+}
+.form_container h1 {
+  font-size: 2rem;
+  font-family: "cursive";
+}
+.placeNames {
+  color: blue;
+}
+.ModalTitle {
+  padding-top: 20px;
+}

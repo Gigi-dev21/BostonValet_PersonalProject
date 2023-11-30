@@ -1,6 +1,7 @@
 .home {
-  background-image: url("../Resources/Images/bannerImage.jpg");
+  background-image: url("../Resources/Images/cars.jpg");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -8,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
 }
 
 .logo {
@@ -24,7 +25,11 @@
 .logo button {
   padding: 5px;
   border: none;
-  color: blue;
-  background-color: antiquewhite;
+  color: black;
+  background-color: white;
   border-radius: 5px;
+  font-size: 18px;
+}
+.button:hover {
+  background-color: rgb(209, 207, 207);
 }

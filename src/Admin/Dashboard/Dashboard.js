@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./dashboard.css";
 import logo from "../../Resources/Images/bostonValetLogo.png";
 import Header from "../../Header/Header";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { useNavigate } from "react-router-dom";
+import ViewData from "./ViewData";
+import { StateContext } from "../../stateprovider/Stateprovider";
+
 function Dashboard() {
   let navigate = useNavigate();
+  const [{ user }, dispatch] = useContext(StateContext);
+  // Check if there is no user, and handle accordingly
+
+  useEffect(() => {
+    if (!user) {
+      navigate("/");
+    }
+  }, [user, navigate]);
 
   return (
     <div className="Dashboard">
@@ -19,10 +31,9 @@ function Dashboard() {
               navigate("/createemployee");
             }}
           >
-            <div>Create employee</div>
-            <ArrowForwardIosIcon className="arrows" />
+            <div>Create Users</div>
+            <KeyboardArrowRightIcon className="arrows" />
           </div>
-
           <div
             className="dd"
             onClick={() => {
@@ -30,17 +41,8 @@ function Dashboard() {
             }}
           >
             <div href="/tables">View Employee Lists</div>
-            <ArrowForwardIosIcon className="arrows" />
-          </div>
-          <div
-            className="dd"
-            onClick={() => {
-              navigate("/dashboard/data");
-            }}
-          >
-            <div>View Data</div>
-            <ArrowForwardIosIcon className="arrows" />
-          </div>
+            <KeyboardArrowRightIcon className="arrows" />
+          </div>{" "}
           <div
             className="dd"
             onClick={() => {
@@ -48,10 +50,20 @@ function Dashboard() {
             }}
           >
             <div>View Places</div>
-            <ArrowForwardIosIcon className="arrows" />
+            <KeyboardArrowRightIcon className="arrows" />
           </div>
+          {/* <div
+            className="dd"
+            onClick={() => {
+              navigate("/dashboard/data");
+            }}
+          >
+            <div>View Data</div>
+            <ArrowForwardIosIcon className="arrows" />
+          </div> */}
+          <ViewData />
         </div>
-        <div className="sidebar_data">hiiii</div>
+        {/* <div className="sidebar_data">hiiii</div> */}
       </div>
     </div>
   );

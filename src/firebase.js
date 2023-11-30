@@ -3,13 +3,13 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBAEO3-04LwMpShZTt3SvqJmg7T2NqjsP4",
-  authDomain: "valet-cd4f2.firebaseapp.com",
-  projectId: "valet-cd4f2",
-  storageBucket: "valet-cd4f2.appspot.com",
-  messagingSenderId: "468811015691",
-  appId: "1:468811015691:web:045cab16b8260f38a3490e",
-  measurementId: "G-5NG3ZJG9PE",
+  apiKey: "AIzaSyDxiKvzxlgUAgW0L6i_AjEmmr61YOYYpEo",
+  authDomain: "bostonvalet-6485d.firebaseapp.com",
+  projectId: "bostonvalet-6485d",
+  storageBucket: "bostonvalet-6485d.appspot.com",
+  messagingSenderId: "181686680421",
+  appId: "1:181686680421:web:99236a28f09f1e4b2bff8c",
+  measurementId: "G-B4ZMSFJ6QZ",
 };
 
 const app = firebase.initializeApp(firebaseConfig);

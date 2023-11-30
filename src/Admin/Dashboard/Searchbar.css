@@ -1,0 +1,28 @@
+/* Search bar */
+
+.header_search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.header_searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.header_searchIcon {
+  color: #555;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .search_container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

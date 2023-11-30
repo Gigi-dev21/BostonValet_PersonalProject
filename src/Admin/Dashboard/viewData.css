@@ -1,0 +1,35 @@
+.dropdownPlaces {
+  /* background-color: white; */
+  max-width: 50%;
+  padding: 5px;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
+}
+.dropdownPlaces p {
+  margin-bottom: 0 !important;
+}
+.dropdownYears {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+  padding: 5px 20px 20px 20px;
+  background-color: rgb(226, 225, 225);
+}
+.dropdownYears hr {
+  margin: 0 !important;
+}
+.years {
+  /* margin-top: 20px; */
+  font-weight: bold;
+}
+.years:hover {
+  color: blue;
+}
+.yearsDiv {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.placesName:hover {
+  color: blue;
+  font-size: 1.2rem;
+}

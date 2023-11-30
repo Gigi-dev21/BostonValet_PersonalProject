@@ -1,0 +1,40 @@
+.placeAndYear {
+  font-size: 3rem;
+  text-align: center;
+  /* margin-bottom: 50px; */
+  /* color: #0c6dfd; */
+  font-family: "cursive";
+}
+.weekname {
+  margin-top: 30px;
+}
+.editButtons {
+  display: flex;
+}
+.edit_icon {
+  margin-right: 10px;
+}
+/* Add a new class for blinking cells */
+.blink-cell {
+  animation: blinkAnimation 1s infinite alternate;
+}
+
+@keyframes blinkAnimation {
+  from {
+    background-color: white; /* or whatever the original background color is */
+  }
+  to {
+    background-color: #759acd;
+  }
+}
+.modal {
+  padding: 30px !important;
+}
+.inputs {
+  width: 96% !important;
+  margin: 0 auto;
+}
+.total th {
+  color: rgb(197, 0, 0) !important;
+  font-size: 1.1rem;
+}
