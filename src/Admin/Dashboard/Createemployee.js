@@ -115,7 +115,7 @@ function Createemployee() {
           email: userEmail,
           role: selectedUser === "1" ? "admin" : "employee",
         };
-
+        // userCredential.user.uid create a unique identifier?/////
         await db.collection("users").doc(userCredential.user.uid).set(userData);
 
         console.log("User registered successfully!");

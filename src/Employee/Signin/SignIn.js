@@ -21,13 +21,14 @@ function EmployeeSignin() {
   const [{}, dispatch] = useStateValue();
   /// TARGETS THE PASSWORD/////
   const handlePasswordChange = (event) => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setPassword(event.target.value);
   };
   /// TARGETS THE USERNAME/////
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
   };
+
   //// HANDLES THE SIGN IN BUTTON//////
   const handleSignIn = async (e) => {
     e.preventDefault();
@@ -44,13 +45,16 @@ function EmployeeSignin() {
 
       if (!userQuerySnapshot.empty) {
         const userData = userQuerySnapshot.docs[0].data();
+        console.log(userData);
         const userEmail = userData.email;
 
         // Sign in with the retrieved email and password
         signInWithEmailAndPassword(auth, userEmail, password)
           .then((userCredential) => {
             if (userCredential) {
+              // console.log(userCredential);
               const user = userCredential.user;
+              // console.log(user);
               const userId = user.uid;
 
               setUserName(userData.name);
@@ -78,12 +82,12 @@ function EmployeeSignin() {
                     // Save user data to localStorage for persistence
                     localStorage.setItem("user", JSON.stringify(user));
                     // Log the user data
-                    console.log("User Data:", {
-                      uid: user.uid,
-                      email: user.email,
-                      displayName: user.displayName,
-                      // Add other user properties from userData as needed
-                    });
+                    // console.log("User Data:", {
+                    //   uid: user.uid,
+                    //   email: user.email,
+                    //   displayName: user.displayName,
+                    //   // Add other user properties from userData as needed
+                    // });
                     // Check the user role and navigate accordingly
                     const role = userData.role;
 
@@ -149,7 +153,7 @@ function EmployeeSignin() {
             />
             <br />
             <Form.Control
-              type="text"
+              type="password"
               value={password}
               placeholder="Password"
               onChange={handlePasswordChange}

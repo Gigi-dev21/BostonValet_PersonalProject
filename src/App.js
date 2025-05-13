@@ -2,7 +2,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home/Home";
 import "./Resources/bootstrap.css";
-import Resturants from "./Resturants/Resturants";
+// import Resturants from "./Resturants/Resturants";
 // import AdminSignIn from "./Admin/signinPage/AdminSignIn";
 import SignIn from "./Employee/Signin/SignIn";
 import Dashboard from "./Admin/Dashboard/Dashboard";
@@ -79,8 +79,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        {/* <Route path="/" element={<Home />}></Route> */}
-        {/* <Route path="/adminsignin" element={<AdminSignIn />}></Route> */}
+        {/* <Route path="/" element={<Home />}></Route>
+        <Route path="/adminsignin" element={<AdminSignIn />}></Route> */}
         <Route path="/error" element={<Error />}></Route>
         <Route
           path="/dashboard"

@@ -4,6 +4,7 @@ import logo from "../Resources/Images/bostonValetLogo.png";
 import { Link, useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
+
   return (
     <div className="home">
       <div className="logo-container">

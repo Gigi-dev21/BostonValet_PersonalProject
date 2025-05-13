@@ -119,7 +119,7 @@ function ViewData() {
                     </div>
                     <hr />
                   </div>
-
+                  {/* lists the places based on the filtered year */}
                   {selectedYear === year && showPlaces && (
                     <div className="dropdownPlaces">
                       {groupedData[year]?.places.length > 0 ? (

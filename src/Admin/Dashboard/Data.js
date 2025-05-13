@@ -27,6 +27,7 @@ function Data({ groupedData }) {
   const [blink, setBlink] = useState(false);
   const [error, seterror] = useState("");
   const [{ user }, dispatch] = useContext(StateContext);
+  const [filteredData, setFilteredData] = useState([]);
 
   const fetchData = async () => {
     try {
@@ -38,7 +39,7 @@ function Data({ groupedData }) {
         const itemWitdId = { ...item, id: doc.id }; // Include tde document ID
         const itemYear = new Date(item.date).getFullYear();
 
-        // Check botd year and place conditions
+        // Check both year and place conditions
         if (
           itemYear.toString() === year.toString() &&
           item.selectedRestaurant === place
@@ -170,7 +171,7 @@ function Data({ groupedData }) {
   const calculateSum = (data, field) => {
     return data.reduce((sum, item) => {
       const value = parseFloat(item[field]);
-      console.log(`Adding ${field}: ${sum} + ${value} = ${sum + value}`);
+      // console.log(`Adding ${field}: ${sum} + ${value} = ${sum + value}`);
       return sum + value;
     }, 0);
   };
@@ -185,6 +186,25 @@ function Data({ groupedData }) {
     // Return the formatted value
     return formatter.format(value);
   };
+  const handleSearch = (searchTerm) => {
+    if (!searchTerm) {
+      setFilteredData([]);
+      return;
+    }
+
+    const searchData = sortedYearData.filter((item) => {
+      const isMatch = item.date.includes(searchTerm);
+
+      // Log the search term, item, and whether it matches the search term
+      console.log("Search Term:", searchTerm);
+      console.log("Item:", item);
+      console.log("Matches Search Term:", isMatch);
+
+      return isMatch;
+    });
+    console.log(`Filtered Data:`, searchData);
+    setFilteredData(searchData);
+  };
 
   return (
     <div className="Data">
@@ -193,6 +213,7 @@ function Data({ groupedData }) {
         <h1 className="placeAndYear">
           {place} {year}
         </h1>
+        <SearchBar onSearch={handleSearch} />
 
         {/* <SearchBar onSearch={onSearch} groupedWeekData={groupedWeekData} /> */}
         {/* <SearchBar

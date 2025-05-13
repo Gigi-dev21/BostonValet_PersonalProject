@@ -52,9 +52,9 @@ function Forms() {
   // FETCHES THE PLACES FROM DB WHICH ADMIN ADDS
   useEffect(() => {
     if (userName) {
-      console.log("First Name:", firstName);
-      console.log("Last Name:", lastName);
-      console.log("user Name:", userName);
+      // console.log("First Name:", firstName);
+      // console.log("Last Name:", lastName);
+      // console.log("user Name:", userName);
       // Fetch places data from the database
       db.collection("places")
         .get()

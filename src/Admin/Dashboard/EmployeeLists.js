@@ -20,6 +20,7 @@ function EmployeeLists() {
   // HANDLES MODAL///
   const [show, setShow] = useState(false);
 
+  // handels when delete button is clicked////
   const handleShow = (userId, userName) => {
     setSelectedUserId(userId);
     setSelectedUserName(userName);
@@ -238,5 +239,3 @@ function EmployeeLists() {
 }
 
 export default EmployeeLists;
-//
-//In this updated code, I have added proper commenting to explain the functionality of each part of the code. The comments should be clear and concise, helping you understand the code better.

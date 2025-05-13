@@ -7,24 +7,11 @@ import { startOfWeek, endOfWeek, parseISO } from "date-fns";
 
 import "./Searchbar.css";
 
-function SearchBar({ onSearch, setSearchDate, setScrollTarget }) {
-  const [searchInput, setSearchInput] = useState("");
+function SearchBar({ onSearch }) {
+  const [searchTerm, setSearchTerm] = useState("");
+
   const handleSearch = () => {
-    setSearchDate(searchInput);
-    onSearch();
-    setScrollTarget(searchInput);
-    setSearchInput("");
-  };
-
-  const handleInputChange = (e) => {
-    setSearchInput(e.target.value);
-  };
-
-  const handleClearSearch = () => {
-    // Clear the search input and notify the parent component
-    setSearchInput("");
-    setSearchDate("");
-    onSearch();
+    onSearch(searchTerm);
   };
 
   return (
@@ -33,8 +20,8 @@ function SearchBar({ onSearch, setSearchDate, setScrollTarget }) {
         <input
           className="header_searchInput"
           type="date" // Use type="date" for a date input
-          value={searchInput}
-          onChange={handleInputChange}
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
         <div>
           <SearchIcon className="header_searchIcon" />
