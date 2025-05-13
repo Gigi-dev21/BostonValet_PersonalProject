@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Boston Valet Worklog - GitHub README</title>
 </head>
 <body>
   <h1>🚗 Boston Valet Worklog</h1>
