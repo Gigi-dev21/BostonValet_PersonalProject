@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boston Valet Worklog - GitHub README</title>
+</head>
+<body>
+  <h1>🚗 Boston Valet Worklog</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <p><strong>Boston Valet Worklog</strong> is a web-based solution designed to digitize and streamline manual work log entry processes for valet employees and administrators.</p>
 
-## Available Scripts
+  <h2>💡 Project Inspiration</h2>
+  <p>This idea originated when I noticed a local company struggling with <strong>manual data entry</strong>, where employees were writing down their daily work information on paper, and managers would later transfer it into Excel spreadsheets — a time-consuming and error-prone process.</p>
 
-In the project directory, you can run:
+  <p>To solve this, I built a modern web application that replaces the manual process with an intuitive, efficient, and secure digital platform.</p>
 
-### `npm start`
+  <h2>🧠 Key Features</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <h3>👥 User Roles</h3>
+  <ul>
+    <li><strong>Admin:</strong> Can create and manage employee accounts, view logs, edit users and workplaces, and analyze data.</li>
+    <li><strong>Employee:</strong> Can sign in and log their daily work activity and hours.</li>
+  </ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <h3>📋 Core Functionality</h3>
+  <ul>
+    <li>Employee worklog submissions are stored in a centralized database.</li>
+    <li>Admin dashboard with:
+      <ul>
+        <li>Overview of all employees</li>
+        <li>Access to individual work logs</li>
+        <li>Edit/remove users and work locations</li>
+        <li>Data tables sorted by <strong>year</strong> and <strong>weeks</strong> for easy filtering</li>
+      </ul>
+    </li>
+    <li>Responsive and user-friendly interface</li>
+  </ul>
 
-### `npm test`
+  <h2>🛠️ Tech Stack</h2>
+  <ul>
+    <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React</li>
+    <li><strong>Backend:</strong> Node.js, Express</li>
+    <li><strong>Database:</strong> MySQL</li>
+    <li><strong>Authentication:</strong>JWT</li>
+  </ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <h2>🔍 How It Works</h2>
+  <ol>
+    <li>Admin logs in to create accounts for employees</li>
+    <li>Employees log in and enter daily work information (time, location, tasks, etc.)</li>
+    <li>Admins view submissions from all employees in a sortable, filterable dashboard</li>
+    <li>Admins can generate reports by year and weekly breakdowns</li>
+  </ol>
 
-### `npm run build`
+  <h2>📸 Demo</h2>
+  <p>👉 <a href="https://drive.google.com/file/d/18I7XABmPqBXql_Ix_ak6X2QluS6CLee_/view?usp=drive_link" target="_blank">Live Demo</a></p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  <h2>📌 Future Improvements</h2>
+  <ul>
+    <li>Export to Excel or PDF</li>
+    <li>Notifications for missed log entries</li>
+    <li>Mobile app integration</li>
+  </ul>
+</body>
+</html>
