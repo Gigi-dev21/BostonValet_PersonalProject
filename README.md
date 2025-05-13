@@ -54,12 +54,5 @@
 
   <h2>📸 Demo</h2>
   <p>👉 <a href="https://drive.google.com/file/d/18I7XABmPqBXql_Ix_ak6X2QluS6CLee_/view?usp=drive_link" target="_blank">Live Demo</a></p>
-
-  <h2>📌 Future Improvements</h2>
-  <ul>
-    <li>Export to Excel or PDF</li>
-    <li>Notifications for missed log entries</li>
-    <li>Mobile app integration</li>
-  </ul>
 </body>
 </html>
